@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio website built using HTML and CSS. This site showcases my skills, experience, and projects in Full Stack Development and AI Integration.
 
-🔗 **Live Site**: [https://diyu19.github.io/portfolio.github.io/](https://diyu19.github.io/portfolio.github.io/)
+🔗 **Live Site**: [https://diyu19.github.io/portfolio.github.io/](https://diyu19.github.io/portfolio.gihub.io/)
 
 ---
 
