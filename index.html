@@ -1,91 +1,256 @@
-<!DOCTYPE html>
+
+
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Divya Tayade - Portfolio</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; background: #f2f2f2; }
-    header, section, footer { padding: 20px; max-width: 1000px; margin: auto; }
-    nav { background: #222; color: #fff; display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; position: sticky; top: 0; z-index: 1000; }
-    nav a { color: white; margin-left: 15px; text-decoration: none; }
-    nav a:hover { text-decoration: underline; }
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Divya Tayade — Portfolio</title>
+  <meta name="description" content="Divya Tayade — Full Stack & AI Developer. React, Node, AI integration, Cloud." />
 
-    .hero { background: #1c62ae; color: white; padding: 60px 20px; text-align: center; }
-    .hero h1 { font-size: 3em; }
-    .hero p { font-size: 1.2em; margin-top: 10px; }
+  <!-- GSAP CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
 
-    .section-title { margin-top: 40px; font-size: 1.5em; border-bottom: 2px solid #007bff; padding-bottom: 5px; }
-
-    ul { list-style: disc; padding-left: 20px; margin-top: 10px; }
-
-    footer { background: #222; color: #ccc; text-align: center; padding: 20px; margin-top: 50px; }
-    .contact-info a { color: #00aced; text-decoration: none; }
-  </style>
+<link rel="stylesheet" href="index.css">
 </head>
 <body>
+  <div class="container">
+    <header>
+      <div class="brand" id="brand">
+        <div class="logo" style="margin-top: 20px;" aria-hidden="true">DT</div>
+        <div class="name">
+          <div class="title">Divya Sahadev Tayade</div>
+          <div class="sub">Full Stack & AI Developer — React · Node · Cloud · ML APIs</div>
+        </div>
+      </div>
 
-  <nav>
-    <div><strong>Divya Tayade</strong></div>
-    <div>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
+      <nav id="nav">
+        <a class="btn" href="#projects">Projects</a>
+        <a class="btn" href="#experience">Experience</a>
+        <a class="btn" href="#contact">Contact</a>
+        <a class="btn" href="https://diyu19.github.io/portfolio/" target="_blank" rel="noopener" style="background:transparent;border:1px solid rgba(125,211,252,0.08);color:var(--accent-2);">Live Portfolio</a>
+      </nav>
+    </header>
+ <nav id="na1v">
+        <a class="btn" href="#projects">Projects</a>
+        <a class="btn" href="#experience">Experience</a>
+        <a class="btn" href="#contact">Contact</a>
+        <a class="btn" href="https://diyu19.github.io/portfolio/" target="_blank" rel="noopener" style="background:transparent;border:1px solid rgba(125,211,252,0.08);color:var(--accent-2);">Live Portfolio</a>
+      </nav>
+    <main>
+      <!-- Left column -->
+      <section>
+        <div class="panel" id="intro">
+          <div class="section-title">About</div>
+          <p class="summary">
+            Highly analytical and innovative Full Stack & AI Developer with expertise in React, Angular, Node.js, Python and Express.js. Experienced in integrating AI/ML models (Hugging Face, OpenAI APIs) into real-world web applications, building scalable RESTful systems, and deploying cloud-native solutions on AWS, Azure, and GCP.
+          </p>
+        </div>
 
-  <section class="hero">
-    <h1>Hi, I'm Divya Tayade</h1>
-    <p>Full Stack Developer | AI Enthusiast | MERN, Python, Node.js</p>
-  </section>
+        <div class="panel" style="margin-top:18px" id="skills">
+          <div class="section-title">Technical Skills</div>
+          <div class="skills">
+            <span class="skill">React</span>
+            <span class="skill">Angular</span>
+            <span class="skill">Next.js</span>
+            <span class="skill">Node.js</span>
+            <span class="skill">Express</span>
+            <span class="skill">Python</span>
+            <span class="skill">HTML,CSS,JS</span>
+            <span class="skill">Hugging Face</span>
+            <span class="skill">OpenAI APIs</span>
+            <span class="skill"> Azure</span>
+            <span class="skill">MySQL / MongoDB</span>
+            <span class="skill">WebRTC / WebSockets</span>
+          </div>
+        </div>
 
-  <section id="about">
-    <h2 class="section-title">About Me</h2>
-    <p>
-      I'm a highly analytical and innovative Full Stack Developer with a strong background in frontend and backend technologies. Currently working at ESROMAGICA SPACETECH PVT LTD, I specialize in building robust, scalable web applications and AI-integrated tools. I’m also transitioning into AI engineering to combine web development with intelligent automation.
-    </p>
-  </section>
+        <div class="panel" style="margin-top:18px" id="projects">
+          <div class="section-title">Projects</div>
 
-  <section id="skills">
-    <h2 class="section-title">Skills</h2>
-    <ul>
-      <li>Frontend: React, HTML5, CSS3, JavaScript, Tailwind CSS, Vite</li>
-      <li>Backend: Node.js, Express.js, Python, REST APIs</li>
-      <li>Database: MongoDB, Firebase, MySQL</li>
-      <li>Tools: Postman, Git, GitHub, Hostinger, Vercel, Netlify</li>
-      <li>Cloud & DevOps: AWS S3, GCP, CI/CD, Docker</li>
-      <li>AI & APIs: OpenAI GPT, Hugging Face, WebRTC</li>
-    </ul>
-  </section>
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-title">Summary Writing App</div>
+              <div class="project-desc">
+                A web application that generates concise summaries from long-form text using Hugging Face models and OpenAI APIs. The app allows users to paste or upload documents, select summarization length, and receive an AI-generated summary. Built with React frontend and Node.js backend; deployed to a cloud service with simple auth and logging.
+              </div>
+            </article>
 
-  <section id="projects">
-    <h2 class="section-title">Projects</h2>
-    <ul>
-      <li><strong>Summary Writing App</strong> – Built using React and Node.js, integrated Hugging Face API for AI-generated summaries</li>
-      <li><strong>Burger Website</strong> – Full-stack app with ordering functionality</li>
-      <li><strong>Jaguar Car Seller Website</strong> – Responsive frontend for car listings and inquiries</li>
-      <li><strong>Car Tracker Game with Joystick</strong> – Game UI built using HTML/JS</li>
-      <li><strong>Clinic Management System</strong> – Patient management and scheduling features</li>
-      <li><strong>Amusement Park Ticket Booking System</strong></li>
-    </ul>
-  </section>
+            <article class="project-card">
+              <div class="project-title">Clinic Management System (JSP + JDBC)</div>
+              <div class="project-desc">
+                A responsive clinic-management platform built using JSP and JDBC for real-time database operations. Provides modules for patient registration, appointment scheduling, doctor dashboards, and reports. Designed with secure data access and a focus on transaction integrity and efficient DB interactions.
+              </div>
+            </article>
 
-  <section id="contact">
-    <h2 class="section-title">Contact</h2>
-    <p>Feel free to reach out for collaborations or opportunities!</p>
-    <div class="contact-info">
-      <p><strong>Email:</strong> <a href="mailto:divyatayade123@gmail.com">divyatayade123@gmail.com</a></p>
-     
-      
-    </div>
-  </section>
+            <article class="project-card">
+              <div class="project-title">Car Tracker Game (Joystick)</div>
+              <div class="project-desc">
+                An interactive browser-based game featuring joystick controls for mobile and desktop. Built with modern front-end libraries, the game includes collision detection, score tracking, and responsive controls. Implements smooth animations and an intuitive control scheme to engage users across devices.
+              </div>
+            </article>
 
-  <footer>
-    <p>&copy; 2025 Divya Tayade | Portfolio</p>
-  </footer>
+            <article class="project-card">
+              <div class="project-title">Jaguar Car Seller Website</div>
+              <div class="project-desc">
+                A polished product showcase website for car listings with responsive UI components, detailed vehicle pages, and contact flows. Focused on UX, SEO-friendly markup, and modular React components to enable easy extension to a full e-commerce or lead-gen platform.
+              </div>
+            </article>
 
+            <article class="project-card">
+              <div class="project-title">Burger Ordering App</div>
+              <div class="project-desc">
+                A restaurant ordering interface demonstrating cart management, menu filtering, and order submission flows. The app highlights component-driven UI, state management, and API integration to simulate a working food-ordering pipeline.
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-title">Amusement Park Ticket Booking System</div>
+              <div class="project-desc">
+                A booking system covering ticket selection, time-slot reservations, and user confirmations. Built with responsive UI patterns, it demonstrates data-driven forms, validation, and a simple admin panel for booking management and analytics.
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="panel" id="experience" style="margin-top:18px">
+          <div class="section-title">Professional Experience</div>
+
+          <div style="margin-bottom:10px">
+            <div style="font-weight:700">Full Stack Developer — ESROMAGICA SPACETECH PVT LTD, Pune</div>
+            <div style="color:var(--muted);font-size:13px;margin-top:4px">Mar 2025 – Present</div>
+            <ul style="color:var(--muted);margin-top:8px;padding-left:18px">
+              <li>Led development of cloud-based space-tech platforms using React, Node.js, and cloud providers.</li>
+              <li>Integrated AI APIs for automation, summarization, and analytics.</li>
+              <li>Built real-time systems using WebRTC and WebSockets.</li>
+            </ul>
+          </div>
+
+          <div>
+            <div style="font-weight:700">Frontend Developer — Flynaut LLC</div>
+            <div style="color:var(--muted);font-size:13px;margin-top:4px">Jan 2024 – Feb 2025</div>
+            <ul style="color:var(--muted);margin-top:8px;padding-left:18px">
+              <li>Developed and maintained React applications with reusable component libraries.</li>
+              <li>Worked on API integration, performance improvements and cross-team collaboration.</li>
+            </ul>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Right column -->
+      <aside>
+        <div class="card-mini">
+          <div class="meta-row">
+            <div>
+              <div class="meta-label">Location</div>
+              <div class="meta-value">Pune, Maharashtra, India</div>
+            </div>
+            <div style="text-align:right">
+              <div class="meta-label">Contact</div>
+              <div class="meta-value">+91 95272 26039</div>
+            </div>
+          </div>
+
+          <div style="margin-top:6px">
+            <div class="meta-label">Email</div>
+            <div class="meta-value" style="font-size:12px">divyatayade123@gmail.com</div>
+          </div>
+        </div>
+
+        <div class="card-mini">
+          <div class="section-title">Education</div>
+          <div style="color:var(--muted);font-size:13px">
+            <strong>MCA</strong> — Sinhgad Institute (2022–2024) | CGPA: 8.58<br/>
+            <strong>BBA-CA</strong> — Garware College (2019–2022) | CGPA: 9.34
+          </div>
+        </div>
+
+        <div class="card-mini">
+          <div class="section-title">Certifications</div>
+          <div style="color:var(--muted);font-size:13px;line-height:1.5">
+            - Microsoft Azure Fundamentals (AZ-900)<br/>
+            - Python, Java, Responsive Web Design<br/>
+            - AI & MERN Stack Development
+          </div>
+        </div>
+
+        <div class="card-mini" id="contact">
+          <div class="section-title">Contact</div>
+          <!-- <form onsubmit="event.preventDefault(); alert('Message ready to be hooked up.');">
+            <input class="contact-input" type="text" placeholder="Your name" required/>
+            <input class="contact-input" type="email" placeholder="Email" required style="margin-top:8px"/>
+            <textarea class="contact-textarea" rows="4" placeholder="Message" style="margin-top:8px"></textarea>
+            <button class="submit" type="submit">Send message</button>
+          </form> -->
+          <h5>Contact Number:+91 9527226039</h5>
+          <h5>Email ID:divyatayade123@gmail.com</h5>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <div>© <strong>Divya Sahadev Tayade</strong> — Full Stack & AI Developer • <a class="portfolio-link" href="https://diyu19.github.io/portfolio/" target="_blank" rel="noopener">Live Portfolio</a></div>
+    </footer>
+  </div>
+
+  <script>
+    // Wait until GSAP is loaded
+    document.addEventListener('DOMContentLoaded', ()=> {
+      if (typeof gsap === 'undefined') return;
+
+      gsap.registerPlugin(ScrollTrigger);
+
+      // Intro animations
+      const tl = gsap.timeline({defaults:{duration:0.8, ease: "power3.out"}});
+      tl.from("#brand .logo", {y:-20, opacity:0, scale:0.9});
+      tl.from("#brand .title", {y:6, opacity:0}, "-=0.45");
+      tl.from("#nav .btn", {y:8, opacity:0, stagger:0.08}, "-=0.5");
+
+      // Stagger reveal for left column panels
+      gsap.utils.toArray('.panel').forEach((el, i) => {
+        gsap.from(el, {
+          scrollTrigger: { trigger: el, start: "top 85%" },
+          y: 20, opacity:0, duration:0.7, delay: i*0.08, ease:"power2.out"
+        });
+      });
+
+      // Projects cards stagger
+      gsap.utils.toArray('.project-card').forEach((card, i) => {
+        gsap.from(card, {
+          scrollTrigger: { trigger: card, start: "top 92%" },
+          y: 16, opacity:0, scale:0.995, duration:0.6, delay: i*0.06, ease:"power2.out"
+        });
+      });
+
+      // Micro hover interaction using gsap on project hover
+      document.querySelectorAll('.project-card').forEach(card=>{
+        card.addEventListener('mouseenter', ()=> gsap.to(card,{y:-6, boxShadow:"0 22px 50px rgba(7,12,20,0.6)", duration:0.35}));
+        card.addEventListener('mouseleave', ()=> gsap.to(card,{y:0, boxShadow:"0 6px 26px rgba(5,10,18,0.6)", duration:0.35}));
+      });
+
+      // Parallax effect on header logo when scrolling
+      gsap.to('#brand .logo', {
+        scrollTrigger: { scrub: true, start: 0, end: 400 },
+        y: -10
+      });
+
+      // Smooth scroll for nav links
+      document.querySelectorAll('a[href^="#"]').forEach(a=>{
+        a.addEventListener('click', (e)=>{
+          e.preventDefault();
+          const target = document.querySelector(a.getAttribute('href'));
+          if (!target) return;
+          const rect = target.getBoundingClientRect();
+          const top = window.scrollY + rect.top - 24;
+          gsap.to(window, {scrollTo: top, duration:0.7, ease:"power2.out"});
+        })
+      });
+
+    });
+  </script>
+  <!-- gsap ScrollToPlugin / optional plugin loaded only if needed (CDN) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js" defer></script>
 </body>
 </html>
-
